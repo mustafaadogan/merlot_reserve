@@ -36,6 +36,7 @@ import jax.numpy as jnp
 def main(input_file, video_dir, output_dir):
     # read data
     data = BaseDataset(input_file)
+    output_dir = process_path(output_dir)
 
     # initialize model & processor
     grid_size = (18, 32)
