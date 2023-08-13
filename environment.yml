@@ -4,6 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.8
+  - ffmpeg=4.3
+  - ffprobe=4.3
   - tqdm
   - numpy
   - pyyaml
