@@ -90,7 +90,7 @@ def main(input_file, video_dir, output_dir):
             ##############################################################################################################
             
             options =  [item["proficiency"]["caption"]]
-            options += [item["proficiency"]["foiled_caption"]]  
+            options += item["proficiency"]["foils"]
 
             label_space = model.get_label_space(options)
 
